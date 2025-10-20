@@ -33,6 +33,7 @@ function showPage() {
       break;
     default:
       text.textContent = "𝓿𝓸̛̣ 𝔂𝓮̂𝓾";
+      img.src = "./image/vo-yeu-2.jpg";
   }
 }
 
