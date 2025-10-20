@@ -28,7 +28,7 @@ function showPage() {
       text.textContent = "𝓒𝓱𝓲̣ 𝓗𝓪̉𝓲 𝓐𝓷𝓱";
       break;
     case "mamy":
-      img.src = "./image/mamy.jpg";
+      img.src = "./image/mamy.jpeg";
       text.textContent = "mẹ 𝔂𝓮̂𝓾";
       break;
     default:
