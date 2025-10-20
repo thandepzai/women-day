@@ -29,7 +29,7 @@ function showPage() {
       break;
     case "mamy":
       img.src = "./image/mamy.jpeg";
-      text.textContent = "mẹ 𝔂𝓮̂𝓾";
+      text.textContent = "𝓶𝓮̣ 𝔂𝓮̂𝓾";
       break;
     default:
       text.textContent = "𝓿𝓸̛̣ 𝔂𝓮̂𝓾";
