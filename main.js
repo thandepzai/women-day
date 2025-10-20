@@ -8,7 +8,7 @@ onload = () => {
 function showPage() {
   const hash = window.location.hash.replace("#", ""); // bỏ #
   const img = document.querySelector("#anh-hien");
-  const text =  document.querySelector("#text");
+  const text = document.querySelector("#text");
 
   switch (hash) {
     case "vo-yeu":
@@ -17,9 +17,15 @@ function showPage() {
       break;
     case "chi-dung":
       img.src = "./image/dung.jpg";
+      text.textContent = "𝓒𝓱𝓲̣ 𝓓𝓾𝓷𝓰";
       break;
     case "ha-hit":
       img.src = "./image/ha.jpg";
+      text.textContent = "𝓒𝓱𝓲̣ 𝓗𝓪̀";
+      break;
+    case "hai-anh":
+      img.src = "./image/hai-anh.png";
+      text.textContent = "𝓒𝓱𝓲̣ 𝓗𝓪̉𝓲 𝓐𝓷𝓱";
       break;
     case "mamy":
       img.src = "./image/mamy.jpg";
