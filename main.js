@@ -1,6 +1,34 @@
 onload = () => {
-    const c = setTimeout(() => {
-      document.body.classList.remove("not-loaded");
-      clearTimeout(c);
-    }, 1000);
-  };
+  const c = setTimeout(() => {
+    document.body.classList.remove("not-loaded");
+    clearTimeout(c);
+  }, 1000);
+};
+
+function showPage() {
+  const hash = window.location.hash.replace("#", ""); // bỏ #
+  const img = document.querySelector("#anh-hien");
+  const text =  document.querySelector("#text");
+
+  switch (hash) {
+    case "vo-yeu":
+      img.src = "./image/vo-yeu.jpeg";
+      text.textContent = "𝓿𝓸̛̣ 𝔂𝓮̂𝓾";
+      break;
+    case "chi-dung":
+      img.src = "./image/dung.jpg";
+      break;
+    case "ha-hit":
+      img.src = "./image/ha.jpg";
+      break;
+    case "mamy":
+      img.src = "./image/mamy.jpg";
+      text.textContent = "mẹ 𝔂𝓮̂𝓾";
+      break;
+    default:
+      text.textContent = "𝓿𝓸̛̣ 𝔂𝓮̂𝓾";
+  }
+}
+
+window.addEventListener("hashchange", showPage);
+window.addEventListener("load", showPage);
